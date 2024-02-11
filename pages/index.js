@@ -2,7 +2,7 @@ import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
-import deved from "../public/dev-ed-wave.png";
+import yudhaImage from "../public/headshot.jpg";
 import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
@@ -27,51 +27,39 @@ export default function Home() {
       <main className="bg-white dark:bg-gray-900 px-10 md:px-20 lg:px-40 ">
         <section className=" min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons dark:text-white">
+            <h1 className="sm:text-xl text-sm font-burtons dark:text-white">
               developedbyYudha
             </h1>
-            <ul className="flex items-center">
-              <li>
-                <BsFillMoonStarsFill
-                  onClick={() => {
-                    setDarkMode(!darkMode);
-                  }}
-                  className="cursor-pointer text-2xl dark:text-white"
-                />
-              </li>
-              <li>
-                <a
-                  className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="#"
-                >
-                  Resume
-                </a>
-              </li>
-            </ul>
+            <BsFillMoonStarsFill
+              onClick={() => {
+                setDarkMode(!darkMode);
+              }}
+              className="cursor-pointer sm:text-xl text-lg dark:text-white"
+            />
           </nav>
 
           <div className="text-center p-10 ">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
+            <h2 className="sm:text-5xl text-4xl py-2 text-teal-600 font-medium md:text-6xl">
               Yudha Firdaus
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
+            <h3 className="sm:text-2xl text-xl py-2 md:text-3xl dark:text-white">
               Frontend Developer.
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 md:text-xl max-w-xl mx-auto">
+            <p className="sm:text-md text-sm py-5 leading-8 text-gray-800 dark:text-gray-200 md:text-xl max-w-xl mx-auto">
               Hey there! I'm a computer science student who loves coding and
               crafting beautiful user experiences. Let's bring your projects to
               life together!
             </p>
           </div>
 
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600  dark:text-gray-400">
+          <div className="sm:text-5xl text-4xl flex justify-center gap-16 py-3 text-gray-600  dark:text-gray-400">
             <AiFillLinkedin className="cursor-pointer" />
             <AiFillGithub className="cursor-pointer" />
           </div>
 
           {/* mx auto will center it */}
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
-            <Image src={deved} layout="fill" objectFit="cover" />
+            <Image src={yudhaImage} className="object-cover" />
           </div>
         </section>
 
