@@ -92,7 +92,7 @@ export default function Home() {
             </p>
           </div>
           <div className="md:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image
                 src={design}
                 width={100}
@@ -126,7 +126,7 @@ export default function Home() {
               <h4 className="py-4 text-teal-600">Design tools I use</h4>
               <p className="text-gray-800 py-1">Figma</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={code} width={100} height={100} className="mx-auto" />
               <h3 className="text-lg font-medium pt-8 pb-2">
                 Beautiful design
