@@ -144,7 +144,7 @@ export default function Home() {
         <section>
           <div>
             <h3 className="text-3xl py-1 dark:text-white">Portofolio</h3>
-            <p className="text-md py-2 leading 8 text-gray-800 dark: text-gray-200">
+            <p className="text-md py-2 leading 8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as freelance designer and
               developer, i've done remote work for{" "}
               <span className="text-teal-500">agencies</span> consulted for{" "}
