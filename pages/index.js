@@ -26,7 +26,7 @@ export default function Home() {
 
       <main className="bg-white dark:bg-gray-900 px-10 md:px-20 lg:px-40 ">
         <section className=" min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
+          <nav className="py-10 mb-10 flex justify-between">
             <h1 className="sm:text-xl text-sm font-burtons dark:text-white">
               developedbyYudha
             </h1>
@@ -38,7 +38,7 @@ export default function Home() {
             />
           </nav>
 
-          <div className="text-center p-10 ">
+          <div className="text-center px-10 pb-10">
             <h2 className="sm:text-5xl text-4xl py-2 text-teal-600 font-medium md:text-6xl">
               Yudha Firdaus
             </h2>
