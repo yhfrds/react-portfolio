@@ -58,9 +58,11 @@ export default function Home() {
           </div>
 
           {/* mx auto will center it */}
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full sm:w-80 w-40 sm:h-80 h-40 my-10 overflow-hidden">
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full sm:w-80 w-40 sm:h-80 h-40 mt-20 overflow-hidden">
             <Image src={yudhaImage} className="object-cover" />
           </div>
+
+          <div className="h-20"></div>
         </section>
       </main>
     </div>
