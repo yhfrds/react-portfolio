@@ -3,19 +3,18 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
 import yudhaImage from "../public/headshot.jpg";
-import design from "../public/design.png";
-import code from "../public/code.png";
-import consulting from "../public/consulting.png";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
 import { useState } from "react";
+import SocialMediaButtons from "./socialMediaButtons";
+import NavigationBar from "./navigationBar";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    console.log("this was clicked");
+    setDarkMode(!darkMode);
+  };
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -26,17 +25,7 @@ export default function Home() {
 
       <main className="bg-white dark:bg-gray-900 px-10 md:px-20 lg:px-40 ">
         <section className=" min-h-screen">
-          <nav className="py-10 mb-10 flex justify-between">
-            <h1 className="sm:text-xl text-sm font-burtons dark:text-white">
-              developedbyYudha
-            </h1>
-            <BsFillMoonStarsFill
-              onClick={() => {
-                setDarkMode(!darkMode);
-              }}
-              className="cursor-pointer sm:text-xl text-lg dark:text-white"
-            />
-          </nav>
+          <NavigationBar toggleDarkMode={toggleDarkMode} />
 
           <div className="text-center px-10 pb-10">
             <h2 className="sm:text-5xl text-4xl py-2 text-teal-600 font-medium md:text-6xl">
@@ -52,10 +41,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="sm:text-5xl text-4xl flex justify-center gap-16 py-3 text-gray-600  dark:text-gray-400">
-            <AiFillLinkedin className="cursor-pointer" />
-            <AiFillGithub className="cursor-pointer" />
-          </div>
+          <SocialMediaButtons />
 
           {/* mx auto will center it */}
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full sm:w-80 w-40 sm:h-80 h-40 mt-20 overflow-hidden">
