@@ -37,7 +37,7 @@ export default function Home() {
             <p className="sm:text-md text-sm py-5 leading-8 text-gray-800 dark:text-gray-200 md:text-xl max-w-xl mx-auto">
               Hey there! I'm a computer science student who loves coding and
               crafting beautiful user experiences. Let's bring your projects to
-              life together!
+              life together! Test
             </p>
           </div>
 
